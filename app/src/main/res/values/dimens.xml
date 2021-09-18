@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_dimen">16dp</dimen>
+    <dimen name="card_dimen">5dp</dimen>
+    <dimen name="small_txt_size">12sp</dimen>
+    <dimen name="large_txt_size">16sp</dimen>
+    <dimen name="margin_top_space">10dp</dimen>
+</resources>

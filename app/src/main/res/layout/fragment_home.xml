@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".ui.fragments.home.HomeFragment">
+
+    <Button
+        android:id="@+id/Id_home_auto_btn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:text="Auto"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/Id_home_medicine_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Id_home_shop_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/Id_home_medicine_btn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:text="Medicine"
+        app:layout_constraintBottom_toTopOf="@+id/Id_home_doctor_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Id_home_lab_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Id_home_auto_btn" />
+
+    <Button
+        android:id="@+id/Id_home_doctor_btn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:text="Doctor"
+        app:layout_constraintBottom_toTopOf="@+id/Id_home_hospital_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Id_home_credit_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Id_home_medicine_btn" />
+
+    <Button
+        android:id="@+id/Id_home_hospital_btn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:textAllCaps="false"
+        android:text="Hospital"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Id_home_doctor_btn"
+        app:layout_constraintStart_toStartOf="@+id/Id_home_doctor_btn"
+        app:layout_constraintTop_toBottomOf="@+id/Id_home_doctor_btn" />
+
+    <Button
+        android:id="@+id/Id_home_shop_btn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:text="Shop"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Id_home_auto_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Id_home_auto_btn"
+        app:layout_constraintTop_toTopOf="@+id/Id_home_auto_btn" />
+
+    <Button
+        android:id="@+id/Id_home_lab_btn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:text="Lab"
+        app:layout_constraintBottom_toBottomOf="@+id/Id_home_medicine_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/Id_home_medicine_btn"
+        app:layout_constraintTop_toTopOf="@+id/Id_home_medicine_btn" />
+
+    <Button
+        android:id="@+id/Id_home_credit_btn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:text="Credit"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Id_home_doctor_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Id_home_doctor_btn"
+        app:layout_constraintTop_toTopOf="@+id/Id_home_doctor_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
